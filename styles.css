@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #3d0066, #e0ccff);
+    position: fixed;
+    width: 100%;
+    height: 71px;
+}
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+ul li{
+    padding: 5px;
+    margin: 0 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: #e0ccff;
+}
+ul li:hover{
+    background-color: #3d0066;
+    cursor: pointer;
+}
+#welcome-section{
+    background-color: #e0ccff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 71px;
+}
+#welcome-section h1, h2{
+    color: #3d0066;
+}
+#welcome-section h1{
+    font: normal normal bolder 30px/70px Helvetic;
+}
+#welcome-section h2{
+    font: normal normal 300 15px/normal Helvetic;
+}
+#projects{
+    background-color: #3d0066;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+#projects #project-title{
+    color: #e0ccff;
+}
+#projects #projects-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+#projects-container .project-tile{
+    width: 30vw;
+    padding: 5px;
+    margin: 10px 15px;
+    background-color: #e0ccff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+#projects-container .project-tile .project-link{
+    text-decoration: none;
+    color: #3d0066;
+}
+#accounts{
+    height: calc(100vh - 71px);
+    background-color: #e0ccff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#account-title::before{
+    content: "Khadijah Aljufri Account";
+}
+#accounts #accounts-container{
+    display: flex;
+}
+#accounts #accounts-container .account-item{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 0 15px;
+}
+@media (max-width: 320px) {
+    #accounts #account-title::before{
+        content: "";
+    }
+    #accounts #account-title::before{
+        content: "Khjifry Account";
+    }
+}
